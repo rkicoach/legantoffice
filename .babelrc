@@ -1,0 +1,6 @@
+{
+  "presets": [ "next/babel" ],
+    "plugins": [ "inline-react-svg","transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-runtime","babel-plugin-static-fs"]
+}

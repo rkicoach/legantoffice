@@ -1,0 +1,35 @@
+const nextRoutes = require('next-routes');
+//var history = require('browser-history');
+const routes = nextRoutes();
+routes.add('index', '/');
+routes.add('category', '/shop/:category/:subcategory?');
+// routes.add('cart', '/cart');
+routes.add('pages', '/pages/:page');
+//routes.add('pages', '/pages/:slug');
+ routes.add('product', '/products/:slug');
+//Test change
+//routes.add('robots.txt', '/robots.txt');
+// routes.add('detail', '/pages/:slug/');
+// routes.add('contactcomponent', '/pages/:slug/');
+// routes.add('shipp', '/pages/:slug/');
+// routes.add('returncomponent', '/pages/:slug/');
+// routes.add('privacycomponent', '/pages/:slug/');
+// routes.add('termcomponent', '/pages/:slug/');
+routes.add('prudctcomponent', '/prudctcomponent/:slug');
+// routes.add('blogcomponent', '/pages/:slug/');
+routes.add('personalizationcomponent', '/personalizationcomponent/:slug');
+routes.add('deskcomponent', '/deskcomponent/:slug');
+routes.add('swatchcomponent', '/swatchcomponent/:slug');
+routes.add('conferencecomponent', '/conferencecomponent/:slug');
+routes.add('whyconferencecomponent', '/whyconferencecomponent/:slug');
+routes.add('b2bcomponent', '/b2bcomponent/:slug');
+routes.add('diningcomponent', '/diningcomponent/:slug');
+routes.add('addlogocomponent', '/addlogocomponent/:slug');
+routes.add('tablepadcomponent', '/tablepadcomponent/:slug');
+routes.add('lethercomponent', '/lethercomponent/:slug');
+routes.add('defaultcomponent', '/defaultcomponent/:slug');
+routes.add('searchcomponent', '/searchcomponent/:slug');
+// routes.add('reviewscomponent', '/pages/:slug/');
+routes.add('help');
+
+module.exports = routes;
